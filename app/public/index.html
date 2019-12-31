@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Rocketseat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/fontawesome/css/all.css">
+    <style>
+    body{
+        font-family: sans-serif;
+        margin: 20px;
+    }
+    #box-type-search{
+        margin-bottom: 20px;
+    }
+    ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li{
+        clear: both;
+        margin-top: 20px;
+    }
+    ul img{
+        float: left;
+        margin-right: 10px;
+        width: 90px;
+        border-radius: 50%;
+    }
+    strong{
+        font-size: 20px;
+    }
+    p{
+        margin: 5px 0;
+    }
+    ul span{
+        background-color: rgba(23, 163, 184, 0.7);
+        margin-left: 10px;
+        color: #fff;
+        border-radius: 5px;
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+    ul span.location{
+        background-color: rgba(0,0,0,0);
+        font-size: inherit;
+        color: rgba(0,0,0,.3);
+    }
+    ul span.number{
+        /* background-color: rgba(52, 152, 219,.8); */
+        /* background-color: rgba(52, 73, 94,.5); */
+    }
+    ul span.following{
+        /* background-color:  rgba(121, 45, 151, 0.5); */
+    }
+    ul span.followers{
+        /* background-color: rgba(211, 84, 0,.5); */
+        /* background-color: rgba(46, 204, 113,.8); */
+        /* background-color: rgba(243, 239, 23, 0.8); */
+    }
+   
+    a, a:hover{
+        color: rgba(23, 162, 184,1);
+    }
+    #box-search div.col-4{
+        padding-right: 0;
+    }
+    #box-search div.col-4 input{
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-color: #17a2b8;
+        border-right: none;
+    }
+    .form-control:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #17a2b8;
+    outline: 0;
+    box-shadow: none
+    }
+    #box-search div.col-1{
+        padding: 0;
+    }
+    #box-search div.col-1 button{
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    #loading{
+        margin: 0;
+        padding: 0;
+    }
+    #loading img{
+        width: 50px;
+    }
+    hr{
+        margin: 15px 0;
+    }
+    </style>
+</head>
+<body>
+    <h3>Buscar usuário do GitHub</h3>
+    <form id="repo-form">
+        <div class="row" id="box-search">
+            <div class="col-4">
+                <input class="form-control" type="text" name="repository" placeholder="Digite o nome do usuário" required>    
+            </div>
+            <div class="col-1">
+                <button type="submit" class="btn btn-outline-info"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <!-- <p style="margin:20px 0;font-size: 11px;">Legenda: 
+            <span style="
+            background-color: rgba(46, 204, 113,.8);
+            color: #fff;
+            padding: 5px 15px;
+            margin-left: 10px;
+            border-radius: 20px;">
+            Repositórios Públicos
+            </span>
+            <span style="
+            background-color: rgba(241, 196, 15,.8);
+            color: #fff;
+            padding: 5px 15px;
+            margin-left: 10px;
+            border-radius: 20px;">
+            Seguidores</span>
+        </p> -->
+    </form>
+    <ul id="repo-list"></ul>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./bundle.js"></script>
+</body>
+</html>
