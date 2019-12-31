@@ -1,5 +1,5 @@
 # Repositório "users-github"
-É uma aplicação feita em Javascript e ES6+, com o intuito consolidar os conhecimentos.
+É uma aplicação feita em Javascript ES6+, com o intuito consolidar os conhecimentos.
 
 ## Descrição da aplicação
 A ideia é consumir dados de uma api utilizando os recurso do ES6+. A api escolhida foi a do próprio github.
@@ -9,9 +9,8 @@ O app está na `VERSÃO 1.0`, e pretendo lançar novas versões!
 Tecnologias utilizadas:
 - HTML 5
 - CSS 3
-- JAVASCRIPT
+- JAVASCRIPT ES6+
 - JQUERY
-- ES6+
 
 As técnicas foram ensinadas no curso da **Rocketseat** [STARTER: Curso Javascript ES6+](https://rocketseat.com.br/).
 
